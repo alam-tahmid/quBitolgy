@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_GANALYTICS_VIEW_LIST_TITLE">
+		<message>
+			<![CDATA[COM_GANALYTICS_VIEW_LIST_DESC]]>
+		</message>
+	</layout>
+	<fields name="params" addfieldpath="/administrator/components/com_ganalytics/models/fields">
+		<fieldset name="basic" label="COM_GANALYTICS_VIEW_FIELDS_BASIC_LABEL">
+			<field name="accountids" type="GAnalytics" default=""
+				label="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_ACCOUNT_IDS_LABEL" description="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_ACCOUNT_IDS_DESC" />
+			<field name="type" type="list" default="visitsbytraffic" label="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_DATA_LABEL"
+				description="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_DATA_DESC">
+				<option value="visitsbytraffic">COM_GANALYTICS_VIEW_GANALYTICS_FIELD_DATA_OPTION_BYTRAFFIC</option>
+				<option value="visits">COM_GANALYTICS_VIEW_GANALYTICS_FIELD_DATA_OPTION_VISITS</option>
+				<option value="visitsbybrowser">COM_GANALYTICS_VIEW_GANALYTICS_FIELD_DATA_OPTION_VISITYBROWSER
+				</option>
+				<option value="visitsbycountry">COM_GANALYTICS_VIEW_GANALYTICS_FIELD_DATA_OPTION_VISITSCOUNTRY</option>
+				<option value="timeonsite">COM_GANALYTICS_VIEW_GANALYTICS_FIELD_DATA_OPTION_TIME</option>
+				<option value="toppages">COM_GANALYTICS_VIEW_GANALYTICS_FIELD_DATA_OPTION_TOPPAGES</option>
+				<option value="advanced">COM_GANALYTICS_VIEW_GANALYTICS_FIELD_DATA_OPTION_ADVANCED</option>
+			</field>
+			<field name="daterange" type="list" default="month" label="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_DATE_RANGE_LABEL"
+				description="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_DATE_RANGE_DESC">
+				<option value="day">COM_GANALYTICS_VIEW_GANALYTICS_FIELD_DATE_RANGE_OPTION_DAY</option>
+				<option value="week">COM_GANALYTICS_VIEW_GANALYTICS_FIELD_DATE_RANGE_OPTION_WEEK</option>
+				<option value="month">COM_GANALYTICS_VIEW_GANALYTICS_FIELD_DATE_RANGE_OPTION_MONTH</option>
+				<option value="year">COM_GANALYTICS_VIEW_GANALYTICS_FIELD_DATE_RANGE_OPTION_YEAR</option>
+				<option value="advanced">COM_GANALYTICS_VIEW_GANALYTICS_FIELD_DATE_RANGE_OPTION_ADVANCED</option>
+			</field>
+			<field name="max" type="text" default="10" label="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_MAX_LABEL"
+				size="5"
+				description="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_MAX_DESC" />
+			<field name="@spacer" type="spacer" default="" label=""
+				description="" />
+			<field name="titleFormat" type="textarea2" default=""
+				label="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_TITLE_FORMAT_LABEL" description=""
+				rows="3" cols="50" filter="safehtml">
+				<content><![CDATA[<h3>{{accountname}} [{{profilename}}]</h3>]]></content>
+				<description>COM_GANALYTICS_VIEW_GANALYTICS_FIELD_TITLE_FORMAT_LONG_DESC</description>
+			</field>
+			<field name="showDateSelection" type="radio" default="yes" label="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_DATE_SELECTION_LABEL"
+				description="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_DATE_SELECTION_DESC">
+				<option value="yes">JYES</option>
+				<option value="no">JNO</option>
+			</field>
+			<field name="showVisitors" type="radio" default="yes" label="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_VISITORS_LABEL"
+				description="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_VISITORS_DESC">
+				<option value="yes">JYES</option>
+				<option value="no">JNO</option>
+			</field>
+			<field name="pagination" type="radio" default="yes" label="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_PAGINATION_LABEL"
+				description="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_PAGINATION_DESC">
+				<option value="yes">JYES</option>
+				<option value="no">JNO</option>
+			</field>
+		</fieldset>
+		<fieldset name="advanced" label="COM_GANALYTICS_VIEW_FIELDS_ADVANCED_LABEL">
+			<field name="dimensions" type="dimensionscombo" default="ga:date" multiple="true"
+				label="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_DIMENSIONS_LABEL" description="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_DIMENSIONS_DESC"
+				size="1" class="inputbox dimensionscombo" required="true" />
+			<field name="metrics" type="metricscombo" multiple="true"
+				label="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_METRICS_LABEL" description="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_METRICS_DESC"
+				size="1" class="inputbox metricscombo" required="true" default="ga:visits" />
+			<field name="sort" type="sortcombo" label="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_ADVANCED_SORT_LABEL" multiple="true"
+				description="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_ADVANCED_SORT_DESC" size="1"
+				class="inputbox sortcombo" default="" />
+			<field name="filter" type="text" label="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_ADVANCED_FILTER_LABEL" size="90"
+					description="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_ADVANCED_FILTER_DESC"/>
+			<field name="advancedDateRange" type="text" default="-3 month" label="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_ADVANCED_DATE_RANGE_LABEL"
+				description="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_ADVANCED_DATE_RANGE_DESC"
+				format="%Y-%m-%d" />
+			<field name="startdate" type="calendar" default="" label="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_ADVANCED_START_DATE_LABEL"
+				description="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_ADVANCED_START_DATE_DESC"
+				format="%Y-%m-%d" />
+			<field name="enddate" type="calendar" default="" label="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_ADVANCED_END_DATE_LABEL"
+				description="COM_GANALYTICS_VIEW_GANALYTICS_FIELD_ADVANCED_END_DATE_DESC"
+				format="%Y-%m-%d" />
+		</fieldset>
+	</fields>
+</metadata>

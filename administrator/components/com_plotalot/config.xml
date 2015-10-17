@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<config>
+	<fieldset name="basic" label="COM_PLOTALOT_CONFIG_OPTIONS">
+		<field name="background" type="text" size="12" default="transparent" label="COM_PLOTALOT_CONFIG_BACKGROUND_LABEL" 
+			description="COM_PLOTALOT_CONFIG_BACKGROUND_DESC" >
+		</field>
+
+		<field name="tooltips" type="list" default="1" label="COM_PLOTALOT_CONFIG_TOOLTIPS_LABEL"
+			description="COM_PLOTALOT_CONFIG_TOOLTIPS_DESC">
+			<option value="0">JOFF</option>
+			<option value="1">JON</option>
+		</field>
+		<field name="autocomplete" type="list" default="1" label="COM_PLOTALOT_CONFIG_AUTOCOMPLETE_LABEL"
+			description="COM_PLOTALOT_CONFIG_AUTOCOMPLETE_DESC">
+			<option value="0">JOFF</option>
+			<option value="1">JON</option>
+		</field>
+		<field name="selectonly" type="list" default="1" label="COM_PLOTALOT_CONFIG_SELECTONLY_LABEL"
+			description="COM_PLOTALOT_CONFIG_SELECTONLY_DESC">
+			<option value="0">JOFF</option>
+			<option value="1">JON</option>
+		</field>
+		<field name="experimental" type="list" default="0" label="COM_PLOTALOT_CONFIG_EXPERIMENTAL"
+			description="COM_PLOTALOT_CONFIG_EXPERIMENTAL_DESC">
+			<option value="0">JOFF</option>
+			<option value="1">JON</option>
+		</field>
+	</fieldset>
+</config>

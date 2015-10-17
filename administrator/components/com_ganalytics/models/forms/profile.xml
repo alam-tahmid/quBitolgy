@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="details">
+		<field name="id" type="hidden" />
+		<field name="profileName" type="text" size="100"
+			label="COM_GANALYTICS_PROFILE_FIELD_PROFILE_NAME" description=""
+			class="inputbox" required="true" default="" />
+		<field name="profileID" type="text" size="100"
+			label="COM_GANALYTICS_PROFILE_FIELD_PROFILE_ID" description=""
+			class="inputbox" default="" disabled="true"/>
+		<field name="accountName" type="text" size="100"
+			label="COM_GANALYTICS_PROFILE_FIELD_ACCOUNT_NAME" description=""
+			class="inputbox" required="true" default=""  />
+		<field name="accountID" type="text" size="100"
+			label="COM_GANALYTICS_PROFILE_FIELD_ACCOUNT_ID" description=""
+			class="inputbox" default="" disabled="true" />
+		<field name="webPropertyId" type="text" size="100"
+			label="COM_GANALYTICS_PROFILE_FIELD_WEB_PROFILE_ID" description=""
+			class="inputbox" required="true" default="" />
+		<field name="startDate" type="calendar" size="100"
+			label="COM_GANALYTICS_PROFILE_FIELD_START_DATE" description=""
+			class="inputbox" required="true" default="" />
+	</fieldset>
+</form>

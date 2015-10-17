@@ -1,0 +1,548 @@
+<content>
+	<div class="group">
+		<div class="dd-groupName">Visitor</div>
+		<label class="dd-row" for="ga:visitorType">
+			<input name="ga:visitorType" id="ga:visitorType" class="dd-check"
+				value="ga:visitorType" type="checkbox">
+				<span class="dd-text">ga:visitorType</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:visitCount">
+			<input name="ga:visitCount" id="ga:visitCount" class="dd-check"
+				value="ga:visitCount" type="checkbox">
+				<span class="dd-text">ga:visitCount</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:daysSinceLastVisit">
+			<input name="ga:daysSinceLastVisit" id="ga:daysSinceLastVisit"
+				class="dd-check" value="ga:daysSinceLastVisit" type="checkbox">
+				<span class="dd-text">ga:daysSinceLastVisit</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:userDefinedValue">
+			<input name="ga:userDefinedValue" id="ga:userDefinedValue"
+				class="dd-check" value="ga:userDefinedValue" type="checkbox">
+				<span class="dd-text">ga:userDefinedValue</span>
+			</input>
+		</label>
+	</div>
+	<div class="group">
+		<div class="dd-groupName">Session</div>
+		<label class="dd-row" for="ga:visitLength">
+			<input name="ga:visitLength" id="ga:visitLength" class="dd-check"
+				value="ga:visitLength" type="checkbox">
+				<span class="dd-text">ga:visitLength</span>
+			</input>
+		</label>
+	</div>
+	<div class="group">
+		<div class="dd-groupName">Traffic Sources</div>
+		<label class="dd-row" for="ga:referralPath">
+			<input name="ga:referralPath" id="ga:referralPath" class="dd-check"
+				value="ga:referralPath" type="checkbox">
+				<span class="dd-text">ga:referralPath</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:campaign">
+			<input name="ga:campaign" id="ga:campaign" class="dd-check"
+				value="ga:campaign" type="checkbox">
+				<span class="dd-text">ga:campaign</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:source">
+			<input name="ga:source" id="ga:source" class="dd-check" value="ga:source"
+				type="checkbox">
+				<span class="dd-text">ga:source</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:medium">
+			<input name="ga:medium" id="ga:medium" class="dd-check" value="ga:medium"
+				type="checkbox">
+				<span class="dd-text">ga:medium</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:keyword">
+			<input name="ga:keyword" id="ga:keyword" class="dd-check"
+				value="ga:keyword" type="checkbox">
+				<span class="dd-text">ga:keyword</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:adContent">
+			<input name="ga:adContent" id="ga:adContent" class="dd-check"
+				value="ga:adContent" type="checkbox">
+				<span class="dd-text">ga:adContent</span>
+			</input>
+		</label>
+	</div>
+	<div class="group">
+		<div class="dd-groupName">AdWords</div>
+		<label class="dd-row" for="ga:adGroup">
+			<input name="ga:adGroup" id="ga:adGroup" class="dd-check"
+				value="ga:adGroup" type="checkbox">
+				<span class="dd-text">ga:adGroup</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:adSlot">
+			<input name="ga:adSlot" id="ga:adSlot" class="dd-check" value="ga:adSlot"
+				type="checkbox">
+				<span class="dd-text">ga:adSlot</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:adSlotPosition">
+			<input name="ga:adSlotPosition" id="ga:adSlotPosition" class="dd-check"
+				value="ga:adSlotPosition" type="checkbox">
+				<span class="dd-text">ga:adSlotPosition</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:adDistributionNetwork">
+			<input name="ga:adDistributionNetwork" id="ga:adDistributionNetwork"
+				class="dd-check" value="ga:adDistributionNetwork" type="checkbox">
+				<span class="dd-text">ga:adDistributionNetwork</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:adMatchType">
+			<input name="ga:adMatchType" id="ga:adMatchType" class="dd-check"
+				value="ga:adMatchType" type="checkbox">
+				<span class="dd-text">ga:adMatchType</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:adMatchedQuery">
+			<input name="ga:adMatchedQuery" id="ga:adMatchedQuery" class="dd-check"
+				value="ga:adMatchedQuery" type="checkbox">
+				<span class="dd-text">ga:adMatchedQuery</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:adPlacementDomain">
+			<input name="ga:adPlacementDomain" id="ga:adPlacementDomain"
+				class="dd-check" value="ga:adPlacementDomain" type="checkbox">
+				<span class="dd-text">ga:adPlacementDomain</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:adPlacementUrl">
+			<input name="ga:adPlacementUrl" id="ga:adPlacementUrl" class="dd-check"
+				value="ga:adPlacementUrl" type="checkbox">
+				<span class="dd-text">ga:adPlacementUrl</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:adFormat">
+			<input name="ga:adFormat" id="ga:adFormat" class="dd-check"
+				value="ga:adFormat" type="checkbox">
+				<span class="dd-text">ga:adFormat</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:adTargetingType">
+			<input name="ga:adTargetingType" id="ga:adTargetingType" class="dd-check"
+				value="ga:adTargetingType" type="checkbox">
+				<span class="dd-text">ga:adTargetingType</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:adTargetingOption">
+			<input name="ga:adTargetingOption" id="ga:adTargetingOption"
+				class="dd-check" value="ga:adTargetingOption" type="checkbox">
+				<span class="dd-text">ga:adTargetingOption</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:adDisplayUrl">
+			<input name="ga:adDisplayUrl" id="ga:adDisplayUrl" class="dd-check"
+				value="ga:adDisplayUrl" type="checkbox">
+				<span class="dd-text">ga:adDisplayUrl</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:adDestinationUrl">
+			<input name="ga:adDestinationUrl" id="ga:adDestinationUrl"
+				class="dd-check" value="ga:adDestinationUrl" type="checkbox">
+				<span class="dd-text">ga:adDestinationUrl</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:adwordsCustomerId">
+			<input name="ga:adwordsCustomerId" id="ga:adwordsCustomerId"
+				class="dd-check" value="ga:adwordsCustomerId" type="checkbox">
+				<span class="dd-text">ga:adwordsCustomerId</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:adwordsCampaignId">
+			<input name="ga:adwordsCampaignId" id="ga:adwordsCampaignId"
+				class="dd-check" value="ga:adwordsCampaignId" type="checkbox">
+				<span class="dd-text">ga:adwordsCampaignId</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:adwordsAdGroupId">
+			<input name="ga:adwordsAdGroupId" id="ga:adwordsAdGroupId"
+				class="dd-check" value="ga:adwordsAdGroupId" type="checkbox">
+				<span class="dd-text">ga:adwordsAdGroupId</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:adwordsCreativeId">
+			<input name="ga:adwordsCreativeId" id="ga:adwordsCreativeId"
+				class="dd-check" value="ga:adwordsCreativeId" type="checkbox">
+				<span class="dd-text">ga:adwordsCreativeId</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:adwordsCriteriaId">
+			<input name="ga:adwordsCriteriaId" id="ga:adwordsCriteriaId"
+				class="dd-check" value="ga:adwordsCriteriaId" type="checkbox">
+				<span class="dd-text">ga:adwordsCriteriaId</span>
+			</input>
+		</label>
+	</div>
+	<div class="group">
+		<div class="dd-groupName">System</div>
+		<label class="dd-row" for="ga:browser">
+			<input name="ga:browser" id="ga:browser" class="dd-check"
+				value="ga:browser" type="checkbox">
+				<span class="dd-text">ga:browser</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:browserVersion">
+			<input name="ga:browserVersion" id="ga:browserVersion" class="dd-check"
+				value="ga:browserVersion" type="checkbox">
+				<span class="dd-text">ga:browserVersion</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:operatingSystem">
+			<input name="ga:operatingSystem" id="ga:operatingSystem" class="dd-check"
+				value="ga:operatingSystem" type="checkbox">
+				<span class="dd-text">ga:operatingSystem</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:operatingSystemVersion">
+			<input name="ga:operatingSystemVersion" id="ga:operatingSystemVersion"
+				class="dd-check" value="ga:operatingSystemVersion" type="checkbox">
+				<span class="dd-text">ga:operatingSystemVersion</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:flashVersion">
+			<input name="ga:flashVersion" id="ga:flashVersion" class="dd-check"
+				value="ga:flashVersion" type="checkbox">
+				<span class="dd-text">ga:flashVersion</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:javaEnabled">
+			<input name="ga:javaEnabled" id="ga:javaEnabled" class="dd-check"
+				value="ga:javaEnabled" type="checkbox">
+				<span class="dd-text">ga:javaEnabled</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:isMobile">
+			<input name="ga:isMobile" id="ga:isMobile" class="dd-check"
+				value="ga:isMobile" type="checkbox">
+				<span class="dd-text">ga:isMobile</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:language">
+			<input name="ga:language" id="ga:language" class="dd-check"
+				value="ga:language" type="checkbox">
+				<span class="dd-text">ga:language</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:screenColors">
+			<input name="ga:screenColors" id="ga:screenColors" class="dd-check"
+				value="ga:screenColors" type="checkbox">
+				<span class="dd-text">ga:screenColors</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:screenResolution">
+			<input name="ga:screenResolution" id="ga:screenResolution"
+				class="dd-check" value="ga:screenResolution" type="checkbox">
+				<span class="dd-text">ga:screenResolution</span>
+			</input>
+		</label>
+	</div>
+	<div class="group">
+		<div class="dd-groupName">Geo / Network</div>
+		<label class="dd-row" for="ga:continent">
+			<input name="ga:continent" id="ga:continent" class="dd-check"
+				value="ga:continent" type="checkbox">
+				<span class="dd-text">ga:continent</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:subContinent">
+			<input name="ga:subContinent" id="ga:subContinent" class="dd-check"
+				value="ga:subContinent" type="checkbox">
+				<span class="dd-text">ga:subContinent</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:country">
+			<input name="ga:country" id="ga:country" class="dd-check"
+				value="ga:country" type="checkbox">
+				<span class="dd-text">ga:country</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:region">
+			<input name="ga:region" id="ga:region" class="dd-check" value="ga:region"
+				type="checkbox">
+				<span class="dd-text">ga:region</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:city">
+			<input name="ga:city" id="ga:city" class="dd-check" value="ga:city"
+				type="checkbox">
+				<span class="dd-text">ga:city</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:latitude">
+			<input name="ga:latitude" id="ga:latitude" class="dd-check"
+				value="ga:latitude" type="checkbox">
+				<span class="dd-text">ga:latitude</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:longitude">
+			<input name="ga:longitude" id="ga:longitude" class="dd-check"
+				value="ga:longitude" type="checkbox">
+				<span class="dd-text">ga:longitude</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:networkDomain">
+			<input name="ga:networkDomain" id="ga:networkDomain" class="dd-check"
+				value="ga:networkDomain" type="checkbox">
+				<span class="dd-text">ga:networkDomain</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:networkLocation">
+			<input name="ga:networkLocation" id="ga:networkLocation" class="dd-check"
+				value="ga:networkLocation" type="checkbox">
+				<span class="dd-text">ga:networkLocation</span>
+			</input>
+		</label>
+	</div>
+	<div class="group">
+		<div class="dd-groupName">Page Tracking</div>
+		<label class="dd-row" for="ga:hostname">
+			<input name="ga:hostname" id="ga:hostname" class="dd-check"
+				value="ga:hostname" type="checkbox">
+				<span class="dd-text">ga:hostname</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:pagePath">
+			<input name="ga:pagePath" id="ga:pagePath" class="dd-check"
+				value="ga:pagePath" type="checkbox">
+				<span class="dd-text">ga:pagePath</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:pageTitle">
+			<input name="ga:pageTitle" id="ga:pageTitle" class="dd-check"
+				value="ga:pageTitle" type="checkbox">
+				<span class="dd-text">ga:pageTitle</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:landingPagePath">
+			<input name="ga:landingPagePath" id="ga:landingPagePath" class="dd-check"
+				value="ga:landingPagePath" type="checkbox">
+				<span class="dd-text">ga:landingPagePath</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:secondPagePath">
+			<input name="ga:secondPagePath" id="ga:secondPagePath" class="dd-check"
+				value="ga:secondPagePath" type="checkbox">
+				<span class="dd-text">ga:secondPagePath</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:exitPagePath">
+			<input name="ga:exitPagePath" id="ga:exitPagePath" class="dd-check"
+				value="ga:exitPagePath" type="checkbox">
+				<span class="dd-text">ga:exitPagePath</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:previousPagePath">
+			<input name="ga:previousPagePath" id="ga:previousPagePath"
+				class="dd-check" value="ga:previousPagePath" type="checkbox">
+				<span class="dd-text">ga:previousPagePath</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:nextPagePath">
+			<input name="ga:nextPagePath" id="ga:nextPagePath" class="dd-check"
+				value="ga:nextPagePath" type="checkbox">
+				<span class="dd-text">ga:nextPagePath</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:pageDepth">
+			<input name="ga:pageDepth" id="ga:pageDepth" class="dd-check"
+				value="ga:pageDepth" type="checkbox">
+				<span class="dd-text">ga:pageDepth</span>
+			</input>
+		</label>
+	</div>
+	<div class="group">
+		<div class="dd-groupName">Internal Search</div>
+		<label class="dd-row" for="ga:searchUsed">
+			<input name="ga:searchUsed" id="ga:searchUsed" class="dd-check"
+				value="ga:searchUsed" type="checkbox">
+				<span class="dd-text">ga:searchUsed</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:searchKeyword">
+			<input name="ga:searchKeyword" id="ga:searchKeyword" class="dd-check"
+				value="ga:searchKeyword" type="checkbox">
+				<span class="dd-text">ga:searchKeyword</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:searchKeywordRefinement">
+			<input name="ga:searchKeywordRefinement" id="ga:searchKeywordRefinement"
+				class="dd-check" value="ga:searchKeywordRefinement" type="checkbox">
+				<span class="dd-text">ga:searchKeywordRefinement</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:searchCategory">
+			<input name="ga:searchCategory" id="ga:searchCategory" class="dd-check"
+				value="ga:searchCategory" type="checkbox">
+				<span class="dd-text">ga:searchCategory</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:searchStartPage">
+			<input name="ga:searchStartPage" id="ga:searchStartPage" class="dd-check"
+				value="ga:searchStartPage" type="checkbox">
+				<span class="dd-text">ga:searchStartPage</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:searchDestinationPage">
+			<input name="ga:searchDestinationPage" id="ga:searchDestinationPage"
+				class="dd-check" value="ga:searchDestinationPage" type="checkbox">
+				<span class="dd-text">ga:searchDestinationPage</span>
+			</input>
+		</label>
+	</div>
+	<div class="group">
+		<div class="dd-groupName">Event Tracking</div>
+		<label class="dd-row" for="ga:eventCategory">
+			<input name="ga:eventCategory" id="ga:eventCategory" class="dd-check"
+				value="ga:eventCategory" type="checkbox">
+				<span class="dd-text">ga:eventCategory</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:eventAction">
+			<input name="ga:eventAction" id="ga:eventAction" class="dd-check"
+				value="ga:eventAction" type="checkbox">
+				<span class="dd-text">ga:eventAction</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:eventLabel">
+			<input name="ga:eventLabel" id="ga:eventLabel" class="dd-check"
+				value="ga:eventLabel" type="checkbox">
+				<span class="dd-text">ga:eventLabel</span>
+			</input>
+		</label>
+	</div>
+	<div class="group">
+		<div class="dd-groupName">Ecommerce</div>
+		<label class="dd-row" for="ga:transactionId">
+			<input name="ga:transactionId" id="ga:transactionId" class="dd-check"
+				value="ga:transactionId" type="checkbox">
+				<span class="dd-text">ga:transactionId</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:affiliation">
+			<input name="ga:affiliation" id="ga:affiliation" class="dd-check"
+				value="ga:affiliation" type="checkbox">
+				<span class="dd-text">ga:affiliation</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:visitsToTransaction">
+			<input name="ga:visitsToTransaction" id="ga:visitsToTransaction"
+				class="dd-check" value="ga:visitsToTransaction" type="checkbox">
+				<span class="dd-text">ga:visitsToTransaction</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:daysToTransaction">
+			<input name="ga:daysToTransaction" id="ga:daysToTransaction"
+				class="dd-check" value="ga:daysToTransaction" type="checkbox">
+				<span class="dd-text">ga:daysToTransaction</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:productSku">
+			<input name="ga:productSku" id="ga:productSku" class="dd-check"
+				value="ga:productSku" type="checkbox">
+				<span class="dd-text">ga:productSku</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:productName">
+			<input name="ga:productName" id="ga:productName" class="dd-check"
+				value="ga:productName" type="checkbox">
+				<span class="dd-text">ga:productName</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:productCategory">
+			<input name="ga:productCategory" id="ga:productCategory" class="dd-check"
+				value="ga:productCategory" type="checkbox">
+				<span class="dd-text">ga:productCategory</span>
+			</input>
+		</label>
+	</div>
+	<div class="group">
+		<div class="dd-groupName">Custom Variables</div>
+		<label class="dd-row" for="ga:customVarName(n)">
+			<input name="ga:customVarName(n)" id="ga:customVarName(n)"
+				class="dd-check" value="ga:customVarName(n)" type="checkbox">
+				<span class="dd-text">ga:customVarName(n)</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:customVarValue(n)">
+			<input name="ga:customVarValue(n)" id="ga:customVarValue(n)"
+				class="dd-check" value="ga:customVarValue(n)" type="checkbox">
+				<span class="dd-text">ga:customVarValue(n)</span>
+			</input>
+		</label>
+	</div>
+	<div class="group">
+		<div class="dd-groupName">Time</div>
+		<label class="dd-row" for="ga:date">
+			<input name="ga:date" id="ga:date" class="dd-check" value="ga:date"
+				type="checkbox">
+				<span class="dd-text">ga:date</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:year">
+			<input name="ga:year" id="ga:year" class="dd-check" value="ga:year"
+				type="checkbox">
+				<span class="dd-text">ga:year</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:month">
+			<input name="ga:month" id="ga:month" class="dd-check" value="ga:month"
+				type="checkbox">
+				<span class="dd-text">ga:month</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:week">
+			<input name="ga:week" id="ga:week" class="dd-check" value="ga:week"
+				type="checkbox">
+				<span class="dd-text">ga:week</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:day">
+			<input name="ga:day" id="ga:day" class="dd-check" value="ga:day"
+				type="checkbox">
+				<span class="dd-text">ga:day</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:hour">
+			<input name="ga:hour" id="ga:hour" class="dd-check" value="ga:hour"
+				type="checkbox">
+				<span class="dd-text">ga:hour</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:nthMonth">
+			<input name="ga:nthMonth" id="ga:nthMonth" class="dd-check"
+				value="ga:nthMonth" type="checkbox">
+				<span class="dd-text">ga:nthMonth</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:nthWeek">
+			<input name="ga:nthWeek" id="ga:nthWeek" class="dd-check"
+				value="ga:nthWeek" type="checkbox">
+				<span class="dd-text">ga:nthWeek</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:nthDay">
+			<input name="ga:nthDay" id="ga:nthDay" class="dd-check" value="ga:nthDay"
+				type="checkbox">
+				<span class="dd-text">ga:nthDay</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:dayOfWeek">
+			<input name="ga:dayOfWeek" id="ga:dayOfWeek" class="dd-check"
+				value="ga:dayOfWeek" type="checkbox">
+				<span class="dd-text">ga:dayOfWeek</span>
+			</input>
+		</label>
+	</div>
+</content>

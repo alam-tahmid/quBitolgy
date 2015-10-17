@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_GANALYTICS</name>
+	<author>Digital Peak</author>
+	<creationDate>Jul 2015</creationDate>
+	<copyright>This extension is released under the GNU/GPL License.
+	</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html
+		GNU/GPL
+	</license>
+	<authorEmail>info@digital-peak.com</authorEmail>
+	<authorUrl>joomla.digital-peak.com</authorUrl>
+	<version>3.2.6</version>
+	<description>PLG_SYSTEM_GANALYTICS_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="ganalytics">ganalytics.php</filename>
+		<folder>language</folder>
+	</files>
+	<config>
+		<fields name="params"
+			addfieldpath="/administrator/components/com_ganalytics/models/fields">
+			<fieldset name="basic">
+				<field name="accountids" type="ganalytics" default="" class="single"
+					label="PLG_SYSTEM_GANALYTICS_FIELD_ACCOUNT_IDS_LABEL" description="PLG_SYSTEM_GANALYTICS_FIELD_ACCOUNT_IDS_DESC" />
+				<field name="load-tr-code" type="radio" default="1" class="btn-group"
+					label="PLG_SYSTEM_GANALYTICS_FIELD_LOAD_TR_CODE_LABEL" description="PLG_SYSTEM_GANALYTICS_FIELD_LOAD_TR_CODE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+					<option value="2">PLG_SYSTEM_GANALYTICS_FIELD_LOAD_TR_CODE_BACKEND
+					</option>
+				</field>
+				<field name="tracking" type="list" default="single"
+					label="PLG_SYSTEM_GANALYTICS_FIELD_TRACKING_LABEL" description="PLG_SYSTEM_GANALYTICS_FIELD_TRACKING_DESC">
+					<option value="single">PLG_SYSTEM_GANALYTICS_FIELD_SINGLE_VALUE</option>
+					<option value="subdomains">PLG_SYSTEM_GANALYTICS_FIELD_SUBDOMAINS_VALUE</option>
+					<option value="tld">PLG_SYSTEM_GANALYTICS_FIELD_TLD_VALUE</option>
+				</field>
+				<field name="hostname" type="domain" default=""
+					label="PLG_SYSTEM_GANALYTICS_FIELD_HOSTNAME_LABEL" description="PLG_SYSTEM_GANALYTICS_FIELD_HOSTNAME_DESC" />
+				<field name="user-groups" type="usergroup" default=""
+					multiple="true" label="PLG_SYSTEM_GANALYTICS_FIELD_USER_GROUPS_LABEL"
+					description="PLG_SYSTEM_GANALYTICS_FIELD_USER_GROUPS_DESC" />
+				<field name="user-groups" type="usergroup" default=""
+					multiple="true" label="PLG_SYSTEM_GANALYTICS_FIELD_USER_GROUPS_LABEL"
+					description="PLG_SYSTEM_GANALYTICS_FIELD_USER_GROUPS_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

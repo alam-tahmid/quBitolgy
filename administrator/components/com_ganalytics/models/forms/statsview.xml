@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="details">
+		<field name="id" type="hidden" />
+		<field name="name" type="text" label="COM_GANALYTICS_STATS_VIEW_LABEL_NAME"
+			description="COM_GANALYTICS_STATS_VIEW_HELP_NAME" class="inputbox"
+			required="true" default="" />
+		<field name="dimensions" type="dimensionscombo" multiple="multiple"
+			label="COM_GANALYTICS_STATS_VIEW_LABEL_DIMENSIONS" description="COM_GANALYTICS_STATS_VIEW_HELP_DIMENSIONS"
+			size="1" class="inputbox dimensionscombo" required="true" default="" />
+		<field name="metrics" type="metricscombo" multiple="multiple"
+			label="COM_GANALYTICS_STATS_VIEW_LABEL_METRICS" description="COM_GANALYTICS_STATS_VIEW_HELP_METRICS"
+			size="1" class="inputbox metricscombo" required="true" default="" />
+		<field name="sort" type="sortcombo" label="COM_GANALYTICS_STATS_VIEW_LABEL_SORT" multiple="multiple"
+			description="COM_GANALYTICS_STATS_VIEW_HELP_SORT" size="1"
+			class="inputbox sortcombo" default="" />
+		<field name="max_result" type="text"
+			label="COM_GANALYTICS_STATS_VIEW_LABEL_MAX" description="COM_GANALYTICS_STATS_VIEW_HELP_MAX"
+			size="10" class="inputbox max_results" default="10" />
+		<field name="filter" type="text"
+			label="COM_GANALYTICS_STATS_VIEW_LABEL_FILTER" description="COM_GANALYTICS_STATS_VIEW_HELP_FILTER"
+			size="10" class="inputbox max_results" default="" />
+		<field name="type" type="list" default="yes" class="inputbox"
+			label="COM_GANALYTICS_STATS_VIEW_LABEL_TYPE" description="COM_GANALYTICS_STATS_VIEW_HELP_TYPE">
+			<option value="chart">COM_GANALYTICS_STATS_VIEW_TYPE_CHART</option>
+			<option value="list">COM_GANALYTICS_STATS_VIEW_TYPE_LIST</option>
+		</field>
+	</fieldset>
+</form>

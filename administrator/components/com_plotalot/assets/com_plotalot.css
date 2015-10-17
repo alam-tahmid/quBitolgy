@@ -1,0 +1,54 @@
+.icon-48-plotalot { background-image: url(plotalot.png); }
+.icon-plotalot    { background:url(lad_20.png) no-repeat; 
+                    vertical-align:middle; height:26px !important; width:32px !important; margin-right:4px !important;}
+.plotalot_error {color:red; font-size: 13px;}
+input, textarea, select, label
+	{float:none; margin:0px 5px 2px 6px !important; width: auto !important; vertical-align: middle;}
+
+input.p_long, textarea.p_long
+	{width:95% !important;}
+
+.icon-32-chart { background-image: url(new_chart.png);	}
+.icon-32-table { background-image: url(new_table.png);	}
+.icon-32-item  { background-image: url(new_item.png);	}
+.la_button {background-color:#ECE9D8; border: 2px outset #ECE9D8;}
+.la_button:hover {background-color:#CFCBBB; border: 2px outset #ECE9D8;}
+
+table.plot_table {width: 100%; } 
+table.plot_table td {white-space:nowrap; vertical-align: middle; }
+table.plot_table td.pright {white-space:nowrap; text-align: right; vertical-align: middle; }
+table.plot_table td.ptop {vertical-align: top;}
+
+select:focus {background-color:#FFD !important;}
+
+fieldset.plotalot_form {margin: 10px; border: 1px #CCC solid; padding: 5px; text-align: left; font-size: 12px;}
+fieldset.plotalot_form legend {width: auto; border: 0; margin: 0; padding-left: 5px; padding-right: 5px; }
+
+fieldset input, fieldset textarea, fieldset select, fieldset img, fieldset button 
+	{float: none !important;font-size: 0.9em; font-family: Arial;}
+
+span.extra_save_button {margin:0 40px 0 20px;float:right;text-align:center;border: 1px solid lightgray;padding:0 5px 0 5px;}
+span.extra_save_button a {text-decoration:none;}
+span.extra_save_button a span {display:block;height:32px;width:32px;}
+
+pre {
+	display: block;
+	padding: 8.5px;
+	margin: 0 0 9px;
+	font-size: 12px;
+	line-height: 18px;
+	word-wrap: normal;
+	white-space: pre;
+	white-space: pre-wrap;
+	background-color: whiteSmoke;
+	border: 1px solid #CCC;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+table.help_support         {border-collapse:collapse;border:1px solid #CECACA; border-spacing: 0;}
+table.help_support tr      {border:1px solid #CECACA; background-color:white;   padding: 5px;}
+table.help_support tr.row1 {border:1px solid #CECACA; background-color:#F0F0EE; padding: 5px;}
+table.help_support td      {padding:5px 15px 5px 15px; vertical-align:top;}

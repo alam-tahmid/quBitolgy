@@ -1,0 +1,91 @@
+/*------------------------------------------------------------------------
+# TZ Content Slider - News display/Slider module by ThemeZart.com
+# ------------------------------------------------------------------------
+# Author    ThemeZart http://www.ThemeZart.com
+# Copyright (C) 2010 - 2012 ThemeZart.com. All Rights Reserved.
+# @license - GNU/GPL V2 for PHP files. CSS / JS are Copyrighted Commercial
+# Websites: http://www.ThemeZart.com
+-------------------------------------------------------------------------*/
+h4.tzcontentslider-title {font-size:100%;font-weight:bold}
+a.tzcontentslider-readmore span,span.tzcontentslider-hits,a.tzcontentslider-comments {margin:0 5px 0 0;font-size:0.9em}
+a.tzcontentslider-readmore span {/*background:url(../images/more.png) no-repeat 0 0;*/padding:0 0 0 13px}
+span.tzcontentslider-hits {color:#666666;background:url(../images/hits.png) no-repeat 0 0;padding:0 0 0 14px}
+a.tzcontentslider-comments {background:url(../images/comments.png) no-repeat 0 0;padding:0 0 0 18px}
+
+/*Blog type date*/
+.tzcontentslider-date-blog {float:left;margin:0 10px 0 0;background:#333;padding:6px 10px;text-align:center;color:#999}
+	.tzcontentslider_date_day{font-size:14px;font-weight:700}
+	.tzcontentslider_date_month_year{display:block;text-transform:uppercase}
+	.tzcontentslider_date_month_year span{display:block}
+	span.tzcontentslider_date_month{font-size:11px;line-height:120%}
+	span.tzcontentslider_date_year{font-size:10px}
+
+/*Article tools*/
+div.tzcontentslider-tools{color:#999;font-size:0.9em}
+div.tzcontentslider-tools span {margin:0 5px 0 0}
+div.tzcontentslider-author,
+div.tzcontentslider-created,
+div.tzcontentslider-category {display:inline}
+
+/*Rating*/
+div.tzcontentslider-rating{height:16px;white-space:nowrap;margin:5px 0 0}
+div.tzcontentslider-rating-bar,div.tzcontentslider-rating-bar div{height:16px;background-image:url(../images/transparent_star.png);background-repeat:repeat-x}
+div.tzcontentslider-rating-bar{width:80px;overflow:hidden;background-position:0 0}
+div.tzcontentslider-rating-bar div{background-position:0 -16px;display:block}
+
+/*Newly added*/
+div.tzslider .flt-left {float:left}
+div.tzslider .col-1 {width:100%}
+div.tzslider .col-2 {width:50%}
+div.tzslider .col-3 {width:33.333%}
+div.tzslider .col-4 {width:25%}
+div.tzslider .col-5 {width:20%}
+div.tzslider .col-6 {width:16.666%}
+div.tzslider .col-7 {width:14.256%}
+div.tzslider .col-8 {width:12.5%}
+div.tzslider .col-9 {width:11.111%}
+div.tzslider .col-10 {width:10%}
+
+/*Animation Area*/
+div.tzcontentslider-art-pages, div.tzcontentslider-links-pages {overflow:hidden;position:relative;-webkit-transition:height 300ms;-moz-transition:height 300ms;-o-transition:height 300ms;-ms-transition:height 300ms;transition:height 300ms}
+div.tzcontentslider-page {overflow:hidden;}
+
+div .tzcontentslider-art-controllers, div .tzcontentslider-links-controllers {float:right}
+div .tzcontentslider-art-pagination, div .tzcontentslider-links-pagination{float:left;margin:0 10px}
+			
+	div .tzcontentslider-art-prev, div .tzcontentslider-links-prev,
+	div .tzcontentslider-art-play, div .tzcontentslider-links-play,
+	div .tzcontentslider-art-pause, div .tzcontentslider-links-pause,
+	div .tzcontentslider-art-next, div .tzcontentslider-links-next,
+	div .tzcontentslider-art-pagination span, div .tzcontentslider-links-pagination span{
+		background-image:url(../images/nav-buttons.png);
+		background-repeat:no-repeat;
+		width:8px;
+		height:9px;
+		float:left;cursor:pointer;
+		text-indent:-999em;
+		margin:0 2px;
+	}
+	
+	div .tzcontentslider-art-prev, 
+	div .tzcontentslider-links-prev {background-position:0 0}
+	div .tzcontentslider-art-prev:hover, 
+	div .tzcontentslider-links-prev:hover {background-position:0 -9px}
+	div .tzcontentslider-art-next, 
+	div .tzcontentslider-links-next {background-position:-8px 0}
+	div .tzcontentslider-art-next:hover, 
+	div .tzcontentslider-links-next:hover {background-position:-8px -9px}
+	div .tzcontentslider-art-play, 
+	div .tzcontentslider-links-play {background-position:-24px 0}
+	div .tzcontentslider-art-play:hover, 
+	div .tzcontentslider-links-play:hover {background-position:-24px -9px}
+	div .tzcontentslider-art-pause, 
+	div .tzcontentslider-links-pause {background-position:-32px 0}
+	div .tzcontentslider-art-pause:hover, 
+	div .tzcontentslider-links-pause:hover {background-position:-32px -9px}
+	div .tzcontentslider-art-pagination span, 
+	div .tzcontentslider-links-pagination span{background-position:-16px 0}
+	div .tzcontentslider-art-pagination span:hover, 
+	div .tzcontentslider-links-pagination span:hover, 
+	div .tzcontentslider-art-pagination span.active, 
+	div .tzcontentslider-links-pagination span.active{background-position:-16px -10px}

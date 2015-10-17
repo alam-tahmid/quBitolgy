@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.6.0"
+	client="site"
+	method="upgrade">
+    <name>Content Slider</name>
+	<author>YouTechClub.Com</author>
+	<creationDate>Apr 2011</creationDate>
+    <copyright>(C) 2010 YouTechClub.Com</copyright>
+	<license>GNU General Public License version 2 or later; see
+		LICENSE.txt</license>
+	<authorEmail>contact@youtechclub.com</authorEmail>
+	<authorUrl>http://www.youtechclub.com</authorUrl>
+	<version>1.0</version>
+	<description>CONTENTSLIDER</description>
+    <files>
+         <filename module="mod_contentslider">mod_contentslider.php</filename>
+         <filename module="mod_contentslider">mod_contentslider.xml</filename>
+         <filename module="mod_contentslider">helper.php</filename>         
+         <folder module="mod_contentslider">assets</folder>
+         <folder module="mod_contentslider">tmpl</folder>
+         <folder module="mod_contentslider">elements</folder>
+    </files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_contentslider.ini</language>
+	</languages>
+    <help key="JHELP_EXTENSIONS_MODULE_MANAGER_ARTICLES_CATEGORY" />
+    <config>
+	<fields name="params">
+		<fieldset name="general_settings" label="General Setting" addfieldpath="/modules/mod_contentslider/elements">
+        <!-- Group 1: Article Filter -->
+            <field name="moduleclass_sfx" type="text"
+				label="Suffix Class"
+				description="Suffix Class" />
+            
+           
+                  <field 
+                    name="sec_cat_list" 
+                    type="content" 
+                    multiple="true" size="10"
+                   	label="Select some Categories"
+    				description="Select some Categories"
+                    disabled="false" 
+                    readonly="false" 
+                    >
+                </field> 
+            
+            <field
+				name="featured"
+				type="list"
+				default="2"
+				label="For Featured Article"
+				description="For Featured Article">
+				<option
+					value="0">Hide featured articles</option>
+				<option
+					 value="1">Show featured articles only</option>
+                <option
+					 value="2">Include featured articles</option>
+			</field>
+            
+            <field
+				name="sort_order_field"
+				type="list"
+				default="created"
+				label="Sort Order By"
+				description="Sort Order By">
+				<option
+					value="created">Recently Added First</option>
+				<option
+					 value="modified">Recently Modified First</option>
+                <option
+					 value="ordering">Ordering</option>
+                <option
+					 value="title">Title</option>
+                <option
+					 value="random">Random</option>
+			</field>
+            
+            <field name="thumb_width" type="text" default="650"
+				label="Thumbnail Image Width"
+				description="Thumbnail Image Width DESC" />
+            <field name="thumb_height" type="text" default="350"
+				label="Thumbnail Image Height"
+				description="Thumbnail Image Height DESC" />
+			 <field name="small_thumb_width" type="text" default="40"
+				label="Small Thumbnail Image Width"
+				description="Small Thumbnail Image Width DESC" />
+            <field name="small_thumb_height" type="text" default="40"
+				label="Small Thumbnail Image Height"
+				description="SmallThumbnail Image Height DESC" />
+			<field
+    			name="cropresizeimage"
+    			type="list"
+    			default="0"
+    			label="Resizing image"
+    			description="Resizing image">
+    			<option
+    				value="0">Using Resize</option>
+    			<option
+    				 value="1">Using Crop</option>
+    		</field>
+            <field name="total" type="text" default="15"
+				label="Total Articles"
+				description="Total Articles DESC" />
+            
+            <field
+				name="auto_play"
+				type="list"
+				default="1"
+				label="Auto Play"
+				description="Auto Play DESC">
+				<option
+					value="1">Yes</option>
+				<option
+					 value="0">No</option>
+			</field>
+			 <field
+				name="show_title"
+				type="list"
+				default="1"
+				label="Show Title"
+				description="Show Title DESC">
+				<option
+					value="1">Yes</option>
+				<option
+					 value="0">No</option>
+			</field>
+			<field name="startSlide" type="text" default="0" size="10" label="Start Slide" description="Start Slide DESC" />
+			<field name="effect" type="list" default="random" label="Effect" description="Effect DESC">
+					<option value="random">Random</option>
+					<option value="sliceDown">Slice Down</option>
+					<option value="sliceDownLeft">Slice Down Left</option>
+					<option value="sliceUp">Slice Up</option>
+					<option value="sliceUpLeft">Slice Up Left</option>
+					<option value="sliceUpDown">Slice Up Down</option>
+					<option value="sliceUpDownLeft">Slice Up Down Left</option>
+					<option value="fold">Fold</option>
+					<option value="fade">Fade</option>
+				</field>
+			<field name="slices" type="text" default="15" size="10" label="Slides" description="For slice animations" />
+			<field name="animSpeed" type="text" default="300"
+				label="Animation Speed"
+				description="Slide transition speed" />
+			<field name="pauseTime" type="text" default="3000"
+			label="Autoplay Speed"
+			description="How long each slide will show" />			
+			<field name="directionNav" type="list" default="1" label="Next and Prev navigation" description="Next and Prev navigation">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="directionNavHide" type="list" default="1" label="Only show on hover" description="Only show on hover">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+				</field>
+				<field name="controlNav" type="list" default="1" label="Control Nav" description="1,2,3... navigation">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="controlNavThumbs" type="list" default="1" label="Use thumbnails for Control Nav" description="Use thumbnails for Control Nav">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="controlNavThumbsSearch" type="text" default=".jpg" size="10" label="Control Nav Thumbs Search" description="Replace this with" />
+				<field name="controlNavThumbsReplace" type="text" default="_thumb.jpg" size="10" label="Control Nav ThumbsReplace" description="this in thumb Image src" />
+				<field name="keyboardNav" type="list" default="1" label="Key Board Nav" description="Use left and right arrows">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="pauseOnHover" type="list" default="1" label="Pause On Hover" description="Stop animation while hovering">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="manualAdvance" type="list" default="0" label="Manual Advance" description="Force manual transitions">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="captionOpacity" type="text" default="0.8" size="10" label="Caption Opacity" description="Universal caption opacity
+" />
+        <!-- End Group 1: Article Filter -->
+        </fieldset>
+       	<fieldset name="advanced">
+			<field name="cache" type="list" default="0"
+				label="Caching"
+				description="Caching DESC"
+			>
+				<option value="1">Use Cache</option>
+				<option value="0">Do not use Cache</option>
+			</field>
+            
+            <field name="cache_time" type="text" default="900"
+    				label="Cache Time"
+    				description="Cache Time DESC"/>	
+		</fieldset>
+	</fields>
+	</config>
+</extension>

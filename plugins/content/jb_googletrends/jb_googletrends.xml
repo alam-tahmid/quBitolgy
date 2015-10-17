@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="content" version="3.0" method="upgrade">
+	<name>plg_content_jb_googletrends</name>
+	<author>JoomlaBuzz.com</author>
+	<creationDate>2015-02-10</creationDate>
+	<copyright>(C) 2014 JoomlaBuzz.com</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>hello@joomlabuzz.com</authorEmail>
+	<authorUrl>http://joomlabuzz.com</authorUrl>
+	<version>1.0</version>  
+	<description>PLG_CONTENT_JB_GOOGLETRENDS_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="jb_googletrends">jb_googletrends.php</filename>
+		<filename>language/en-GB/en-GB.plg_content_jb_googletrends.sys.ini</filename>
+		<filename>index.html</filename>
+	</files>               
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_jb_googletrends.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_jb_googletrends.sys.ini</language>
+	</languages>
+        <updateservers>
+                <server type="collection">https://bitbucket.org/joomlabuzz/updateserver/raw/master/update.xml</server>
+        </updateservers>        
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field 
+                                        name="chart" 
+                                        type="list"
+					default="timeseries"
+					label="PLG_CONTENT_JB_GOOGLETRENDS_FIELD_CHART_LABEL"
+					description="PLG_CONTENT_JB_GOOGLETRENDS_FIELD_CHART_DESC"
+				>
+					<option value="timeseries">PLG_CONTENT_JB_GOOGLETRENDS_OPTION_TIMESERIES_VALUE</option>
+					<option value="regionalmap">PLG_CONTENT_JB_GOOGLETRENDS_OPTION_REGIONALMAP_VALUE</option>
+					<option value="citymap">PLG_CONTENT_JB_GOOGLETRENDS_OPTION_CITYMAP_VALUE</option>
+					<option value="regionaltable">PLG_CONTENT_JB_GOOGLETRENDS_OPTION_REGIONALTABLE_VALUE</option>
+					<option value="citytable">PLG_CONTENT_JB_GOOGLETRENDS_OPTION_CITYTABLE_VALUE</option>
+					<option value="topqueries">PLG_CONTENT_JB_GOOGLETRENDS_OPTION_TOPQUERIES_VALUE</option>
+					<option value="relatedsearches">PLG_CONTENT_JB_GOOGLETRENDS_OPTION_RELATEDSEARCHES_VALUE</option>
+				</field>
+				<field 
+                                        name="width" 
+                                        type="text"
+					label="PLG_CONTENT_JB_GOOGLETRENDS_FIELD_WIDTH_LABEL"
+					description="PLG_CONTENT_JB_GOOGLETRENDS_FIELD_WIDTH_DESC"
+					default="500"
+				/>                                
+			</fieldset>
+		</fields>
+	</config>
+</extension>

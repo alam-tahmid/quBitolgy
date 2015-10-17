@@ -1,0 +1,98 @@
+/*
+# Author    ThemeZart
+# Copyright 2012 ThemeZart.com. All Rights Reserved.
+# License - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+# Link: http://www.ThemeZart.com/modules/quickmail
+# Version: 2.5
+*/
+.pane-sliders .panel { border: none !important; }
+div.panel > h3 { height: 30px!important;padding:0!important; background: #dfdfdf!important; border: 1px solid #ccc; font: bold 12px/30px Arial, Helvetica, sans-serif}
+div.panel > h3 a {     color: #FFFFFF !important;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);}
+div.panel h3.pane-toggler-down {background: none repeat scroll 0 0 #454242 !important;}
+.pane-sliders .panel h3 {
+    background: none repeat scroll 0 0 #5FAAE3 !important;
+    border: medium none;
+    padding: 6px 5px !important;
+	font: 16px/30px 'Trebuchet MS';
+}
+
+div.panel h3.pane-toggler-down a { color: #fff!important }
+.pane-toggler span { padding: 0 25px !important;background: transparent url(../images/arrow.png) no-repeat 5px 50% !important; }
+.pane-toggler-down span { padding: 0 25px !important;background: transparent url(../images/arrow_down.png) no-repeat 5px 50% !important; }
+.pane-sliders .content { margin: 0; width: 100%;}
+.panel fieldset.panelform > ul > li > label {
+    color: #444444;
+    font-family: 'Trebuchet MS';
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    margin: 0;
+    max-width: 30% !important;
+    min-width: 30% !important;
+    padding: 5px 20px 5px 10px;
+    text-align: left;
+}
+.panel fieldset.panelform > ul > li fieldset { line-height:24px; }
+fieldset.panelform select { height: 26px; color: #555; line-height: 24px; padding: 2px; font-size:11px; border:1px solid #e0e0e0; box-shadow: 0 0 10px #eee inset!important; }
+fieldset.panelform select[multiple=multiple] { height: auto!important}
+.pane-sliders .content{background:transparent !important;}
+.fltrt ul.adminformlist li { overflow: hidden; border-bottom: 1px solid #eee; padding: 5px 10px; margin: 0}
+div .panel input[type=radio]{margin-top:9px!important}
+.wrap1, .wrap2 {
+    background: none repeat scroll 0 0 #F5F5F5;
+    color: #555555;
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-shadow: 1px 1px 0 #FFFFFF;
+}
+input.readonly{box-shadow:0 0 0;}
+input#jform_title, input#jform_leveltitle, input#jform_grouptitle,fieldset.panelform input {
+    background: none repeat scroll 0 0 transparent;
+	font-size: larger;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0 0 10px #EEEEEE inset;
+    color: #555555;
+    height: 24px;
+    line-height: 16px;
+    margin: 0;
+    padding: 4px 10px;
+	width:253px;
+}
+input, select{color:#555; padding: 3px; border:1px solid #e0e0e0; box-shadow: 0 0 10px #eee inset;background:transparent; }
+a.modal {
+    background: none repeat scroll 0 0 #dfdfdf;
+    color: #555 !important;
+    margin: 5px;
+}
+.button2-left .blank,.button2-left{background:transparent!important;}
+.wrap2 ul li,.wrap1 ul li{background:url("../images/check.png") no-repeat scroll 0 3px transparent;padding-left:20px;}
+.adminform .adminformlist label{    
+	color: #444444;
+    font-size: 11px;
+    font-weight: bold;
+    height: 24px;
+    line-height: 24px;
+    text-align: left;}
+#mod_name {
+    color: #025A8D;
+    padding: 5px 10px;
+    text-shadow: 1px 1px 0 #FFFFFF;
+}
+.submenu-box, div.m{ border-radius: 0 0 0 0 !important;}
+.pane-slider .panelform {
+    margin: 0;
+}
+.panel fieldset.panelform > ul > li > select {
+    color: #444444;
+    font-family: 'Trebuchet MS';
+    font-size: 14px;
+    height: auto;
+    line-height: 24px;
+    margin: 0;
+    min-width: 275px;
+    padding: 5px 5px 5px 10px;
+    text-align: left;
+}

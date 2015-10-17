@@ -1,0 +1,1 @@
+JTT = jQuery.noConflict();

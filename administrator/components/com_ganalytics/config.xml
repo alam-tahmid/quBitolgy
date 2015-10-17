@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="settings" label="COM_GANALYTICS_CONFIG_SETTINGS"
+		addpath="/administrator/components/com_ganalytics/models/fields">
+		<field name="dateFormat" type="text" size="80" default="%d.%m.%Y"
+			label="COM_GANALYTICS_CONFIG_SETTINGS_DATE_FORMAT" description="COM_GANALYTICS_CONFIG_SETTINGS_DATE_FORMAT_DESC" />
+		<field name="ga_cache" type="list" default="1"
+			label="COM_GANALYTICS_CONFIG_SETTINGS_CACHING" description="COM_GANALYTICS_CONFIG_SETTINGS_CACHING_DESC">
+			<option value="2">COM_GANALYTICS_CONFIG_SETTINGS_CACHING_GLOBAL
+			</option>
+			<option value="1">COM_GANALYTICS_CONFIG_SETTINGS_CACHING_ALWAYS
+			</option>
+			<option value="0">COM_GANALYTICS_CONFIG_SETTINGS_CACHING_NEVER
+			</option>
+		</field>
+		<field name="ga_cache_time" type="text" default="21600"
+			label="COM_GANALYTICS_CONFIG_SETTINGS_CACHING_TIME" description="COM_GANALYTICS_CONFIG_SETTINGS_CACHING_TIME_DESC" />
+
+		<field name="client-id" type="text" default=""
+			label="COM_GANALYTICS_CONFIG_SETTINGS_CLIENT_ID_LABEL" size="80"
+			description="COM_GANALYTICS_CONFIG_SETTINGS_CLIENT_ID_DESC" />
+		<field name="client-secret" type="text" default=""
+			label="COM_GANALYTICS_CONFIG_SETTINGS_CLIENT_SECRET_LABEL" size="80"
+			description="COM_GANALYTICS_CONFIG_SETTINGS_CLIENT_SECRET_DESC" />
+		<field name="downloadid" type="text" default="" size="80"
+			label="COM_GANALYTICS_CONFIG_SETTINGS_DOWNLOAD_ID_LABEL"
+			description="COM_GANALYTICS_CONFIG_SETTINGS_DOWNLOAD_ID_DESC" />
+	</fieldset>
+	<fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC">
+		<field name="rules" type="rules" label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox" validate="rules" filter="rules" component="com_ganalytics"
+			section="component" />
+	</fieldset>
+</config>

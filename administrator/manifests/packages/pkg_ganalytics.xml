@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="package" method="upgrade">
+	<packagename>ganalytics</packagename>
+	<packager>Digital Peak</packager>
+	<name>GAnalytics</name>
+	<author>Digital Peak</author>
+	<creationDate>Jul 2015</creationDate>
+	<copyright>This extension is released under the GNU/GPL License.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html
+		GNU/GPL</license>
+	<authorEmail>info@digital-peak.com</authorEmail>
+	<authorUrl>joomla.digital-peak.com</authorUrl>
+	<version>3.2.6</version>
+	<files>
+		<file id="plg_system_ganalytics" type="plugin" group="system" client="site">plg_system_ganalytics.zip</file>
+		<file id="mod_ganalytics_stats" type="module" client="site">mod_ganalytics_stats.zip</file>
+		<file id="mod_ganalytics_stats_count" type="module" client="site">mod_ganalytics_stats_count.zip</file>
+		<file id="com_ganalytics" type="component">com_ganalytics.zip</file>
+	</files>
+	
+	<updateservers>
+		<server type="extension" priority="1" name="GAnalytics Free Update Site"><![CDATA[https://joomla.digital-peak.com/index.php?option=com_ars&view=update&task=stream&format=xml&id=8&ext=extension.xml]]></server>
+	</updateservers>
+</extension>

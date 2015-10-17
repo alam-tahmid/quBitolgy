@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" method="upgrade" client="site">
+	<name>MOD_GANALYTICS_STATS</name>
+	<author>Digital Peak</author>
+	<creationDate>Jul 2015</creationDate>
+	<copyright>This extension is released under the GNU/GPL License.
+	</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html
+		GNU/GPL</license>
+	<authorEmail>info@digital-peak.com</authorEmail>
+	<authorUrl>joomla.digital-peak.com</authorUrl>
+	<version>3.2.6</version>
+	<description>MOD_GANALYTICS_STATS_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_ganalytics_stats">mod_ganalytics_stats.php
+		</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+		<folder>language</folder>
+	</files>
+	<config>
+		<fields name="params" addfieldpath="/administrator/components/com_ganalytics/models/fields">
+			<fieldset name="basic">
+				<field name="accountids" type="GAnalytics" default=""
+					label="MOD_GANALYTICS_STATS_FIELD_ACCOUNT_IDS_LABEL" description="MOD_GANALYTICS_STATS_FIELD_ACCOUNT_IDS_DESC" />
+				<field name="type" type="list" default="visitsbytraffic" label="MOD_GANALYTICS_STATS_FIELD_DATA_LABEL"
+					description="MOD_GANALYTICS_STATS_FIELD_DATA_DESC">
+					<option value="visitsbytraffic">MOD_GANALYTICS_STATS_FIELD_DATA_OPTION_BYTRAFFIC</option>
+					<option value="visits">MOD_GANALYTICS_STATS_FIELD_DATA_OPTION_VISITS</option>
+					<option value="visitsbybrowser">MOD_GANALYTICS_STATS_FIELD_DATA_OPTION_VISITYBROWSER
+					</option>
+					<option value="visitsbycountry">MOD_GANALYTICS_STATS_FIELD_DATA_OPTION_VISITSCOUNTRY</option>
+					<option value="timeonsite">MOD_GANALYTICS_STATS_FIELD_DATA_OPTION_TIME</option>
+					<option value="toppages">MOD_GANALYTICS_STATS_FIELD_DATA_OPTION_TOPPAGES</option>
+					<option value="advanced">MOD_GANALYTICS_STATS_FIELD_DATA_OPTION_ADVANCED</option>
+				</field>
+				<field name="daterange" type="list" default="month" label="MOD_GANALYTICS_STATS_FIELD_DATE_RANGE_LABEL"
+					description="MOD_GANALYTICS_STATS_FIELD_DATE_RANGE_DESC">
+					<option value="day">MOD_GANALYTICS_STATS_FIELD_DATE_RANGE_OPTION_DAY</option>
+					<option value="week">MOD_GANALYTICS_STATS_FIELD_DATE_RANGE_OPTION_WEEK</option>
+					<option value="month">MOD_GANALYTICS_STATS_FIELD_DATE_RANGE_OPTION_MONTH</option>
+					<option value="year">MOD_GANALYTICS_STATS_FIELD_DATE_RANGE_OPTION_YEAR</option>
+					<option value="advanced">MOD_GANALYTICS_STATS_FIELD_DATE_RANGE_OPTION_ADVANCED</option>
+				</field>
+				<field name="max" type="text" default="10" label="MOD_GANALYTICS_STATS_FIELD_MAX_LABEL"
+					size="5"
+					description="MOD_GANALYTICS_STATS_FIELD_MAX_DESC" />
+				<field name="@spacer" type="spacer" default="" label=""
+					description="" />
+				<field name="titleFormat" type="textarea2" default=""
+					label="MOD_GANALYTICS_STATS_FIELD_TITLE_FORMAT_LABEL" description="MOD_GANALYTICS_STATS_FIELD_TITLE_FORMAT_DESC"
+					rows="3" cols="50" filter="safehtml">
+					<content><![CDATA[<p>Dimension: {{dimensions}} <br/> Metric: {{metrics}}</p>]]></content>
+					<description>MOD_GANALYTICS_STATS_FIELD_TITLE_FORMAT_LONG_DESC</description>
+				</field>
+				<field name="showDateSelection" type="radio" default="yes" label="MOD_GANALYTICS_STATS_FIELD_DATE_SELECTION_LABEL" class="btn-group" 
+					description="MOD_GANALYTICS_STATS_FIELD_DATE_SELECTION_DESC">
+					<option value="yes">JYES</option>
+					<option value="no">JNO</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="dimensions" type="dimensionscombo" default="ga:date" multiple="true"
+					label="MOD_GANALYTICS_STATS_FIELD_DIMENSIONS_LABEL" description="MOD_GANALYTICS_STATS_FIELD_DIMENSIONS_DESC"
+					size="1" class="inputbox dimensionscombo" required="true" />
+				<field name="metrics" type="metricscombo" multiple="true"
+					label="MOD_GANALYTICS_STATS_FIELD_METRICS_DESC" description="MOD_GANALYTICS_STATS_FIELD_METRICS_DESC"
+					size="1" class="inputbox metricscombo" required="true" default="ga:visits" />
+				<field name="sort" type="sortcombo" label="MOD_GANALYTICS_STATS_FIELD_ADVANCED_SORT_LABEL" multiple="true"
+					description="MOD_GANALYTICS_STATS_FIELD_ADVANCED_SORT_DESC" size="1"
+					class="inputbox sortcombo" default="" />
+				<field name="filter" type="text" label="MOD_GANALYTICS_STATS_FIELD_ADVANCED_FILTER_LABEL" size="90"
+					description="MOD_GANALYTICS_STATS_FIELD_ADVANCED_FILTER_DESC"/>
+				<field name="advancedDateRange" type="text" default="-3 month" label="MOD_GANALYTICS_STATS_FIELD_ADVANCED_DATE_RANGE_LABEL"
+					description="MOD_GANALYTICS_STATS_FIELD_ADVANCED_DATE_RANGE_DESC"
+					format="%Y-%m-%d" />
+				<field name="startdate" type="calendar" default="" label="MOD_GANALYTICS_STATS_FIELD_ADVANCED_START_DATE_LABEL"
+					description="MOD_GANALYTICS_STATS_FIELD_ADVANCED_START_DATE_DESC"
+					format="%Y-%m-%d" />
+				<field name="enddate" type="calendar" default="" label="MOD_GANALYTICS_STATS_FIELD_ADVANCED_END_DATE_LABEL"
+					description="MOD_GANALYTICS_STATS_FIELD_ADVANCED_END_DATE_DESC"
+					format="%Y-%m-%d" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

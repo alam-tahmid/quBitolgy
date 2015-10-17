@@ -1,0 +1,4 @@
+Course Project: CSE 470 Software Engineering.
+Contributor: Tahmid Alan(Group Leader), Rawnaj Sayed Anam, Kazi Injamamul Haque, Araf Iftekhar Adnan, Ahmad Naquib Chowdhry.
+Project: A website with forum to discuss Software methodology.
+Tools used: Joomla is used to create the whole website.

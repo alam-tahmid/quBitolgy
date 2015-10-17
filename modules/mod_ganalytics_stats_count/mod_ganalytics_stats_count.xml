@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" method="upgrade" client="site">
+	<name>MOD_GANALYTICS_STATS_COUNT</name>
+	<author>Digital Peak</author>
+	<creationDate>Jul 2015</creationDate>
+	<copyright>This extension is released under the GNU/GPL License.
+	</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html
+		GNU/GPL</license>
+	<authorEmail>info@digital-peak.com</authorEmail>
+	<authorUrl>joomla.digital-peak.com</authorUrl>
+	<version>3.2.6</version>
+	<description>MOD_GANALYTICS_STATS_COUNT_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_ganalytics_stats_count">mod_ganalytics_stats_count.php
+		</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+		<folder>language</folder>
+	</files>
+	<config>
+		<fields name="params"
+			addfieldpath="/administrator/components/com_ganalytics/models/fields">
+			<fieldset name="basic">
+				<field name="accountids" type="ganalytics" default="" class="single"
+					label="MOD_GANALYTICS_STATS_COUNT_ACCOUNT_IDS_LABEL" description="MOD_GANALYTICS_STATS_COUNT_ACCOUNT_IDS_DESC" />
+				<field name="pageOnly" type="radio" default="0" class="btn-group" 
+					label="MOD_GANALYTICS_STATS_COUNT_PER_PAGE_LABEL"
+					description="MOD_GANALYTICS_STATS_COUNT_PER_PAGE_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="@spacer" type="spacer" default="" label="MOD_GANALYTICS_STATS_COUNT_OPTION_LABEL"
+					description="MOD_GANALYTICS_STATS_COUNT_OPTION_DESC" />
+				<field name="selectTotalVisitors" type="radio" default="yes" class="btn-group" 
+					label="MOD_GANALYTICS_STATS_COUNT_ACCOUNT_TOTAL_VISITORS_LABEL"
+					description="MOD_GANALYTICS_STATS_COUNT_ACCOUNT_TOTAL_VISITORS_DESC">
+					<option value="yes">JYES</option>
+					<option value="no">JNO</option>
+				</field>
+				<field name="selectVisitorsDay" type="radio" default="yes" class="btn-group" 
+					label="MOD_GANALYTICS_STATS_COUNT_ACCOUNT_VISITORS_DAY_LABEL"
+					description="MOD_GANALYTICS_STATS_COUNT_ACCOUNT_VISITORS_DAY_DESC">
+					<option value="yes">JYES</option>
+					<option value="no">JNO</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

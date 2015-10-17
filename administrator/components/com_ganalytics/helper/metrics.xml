@@ -1,0 +1,584 @@
+<content>
+	<div class="group">
+		<div class="dd-groupName">Visitor</div>
+		<label class="dd-row" for="ga:visitors">
+			<input name="ga:visitors" id="ga:visitors" class="dd-check"
+				value="ga:visitors" type="checkbox">
+				<span class="dd-text">ga:visitors</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:newVisits">
+			<input name="ga:newVisits" id="ga:newVisits" class="dd-check"
+				value="ga:newVisits" type="checkbox">
+				<span class="dd-text">ga:newVisits</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:percentNewVisits">
+			<input name="ga:percentNewVisits" id="ga:percentNewVisits"
+				class="dd-check" value="ga:percentNewVisits" type="checkbox">
+				<span class="dd-text">ga:percentNewVisits</span>
+			</input>
+		</label>
+	</div>
+	<div class="group">
+		<div class="dd-groupName">Session</div>
+		<label class="dd-row" for="ga:visits">
+			<input name="ga:visits" id="ga:visits" class="dd-check" value="ga:visits"
+				type="checkbox">
+				<span class="dd-text">ga:visits</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:bounces">
+			<input name="ga:bounces" id="ga:bounces" class="dd-check"
+				value="ga:bounces" type="checkbox">
+				<span class="dd-text">ga:bounces</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:entranceBounceRate">
+			<input name="ga:entranceBounceRate" id="ga:entranceBounceRate"
+				class="dd-check" value="ga:entranceBounceRate" type="checkbox">
+				<span class="dd-text">ga:entranceBounceRate</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:visitBounceRate">
+			<input name="ga:visitBounceRate" id="ga:visitBounceRate" class="dd-check"
+				value="ga:visitBounceRate" type="checkbox">
+				<span class="dd-text">ga:visitBounceRate</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:timeOnSite">
+			<input name="ga:timeOnSite" id="ga:timeOnSite" class="dd-check"
+				value="ga:timeOnSite" type="checkbox">
+				<span class="dd-text">ga:timeOnSite</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:avgTimeOnSite">
+			<input name="ga:avgTimeOnSite" id="ga:avgTimeOnSite" class="dd-check"
+				value="ga:avgTimeOnSite" type="checkbox">
+				<span class="dd-text">ga:avgTimeOnSite</span>
+			</input>
+		</label>
+	</div>
+	<div class="group">
+		<div class="dd-groupName">Traffic Sources</div>
+		<label class="dd-row" for="ga:organicSearches">
+			<input name="ga:organicSearches" id="ga:organicSearches" class="dd-check"
+				value="ga:organicSearches" type="checkbox">
+				<span class="dd-text">ga:organicSearches</span>
+			</input>
+		</label>
+	</div>
+	<div class="group">
+		<div class="dd-groupName">AdWords</div>
+		<label class="dd-row" for="ga:impressions">
+			<input name="ga:impressions" id="ga:impressions" class="dd-check"
+				value="ga:impressions" type="checkbox">
+				<span class="dd-text">ga:impressions</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:adClicks">
+			<input name="ga:adClicks" id="ga:adClicks" class="dd-check"
+				value="ga:adClicks" type="checkbox">
+				<span class="dd-text">ga:adClicks</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:adCost">
+			<input name="ga:adCost" id="ga:adCost" class="dd-check" value="ga:adCost"
+				type="checkbox">
+				<span class="dd-text">ga:adCost</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:CPM">
+			<input name="ga:CPM" id="ga:CPM" class="dd-check" value="ga:CPM"
+				type="checkbox">
+				<span class="dd-text">ga:CPM</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:CPC">
+			<input name="ga:CPC" id="ga:CPC" class="dd-check" value="ga:CPC"
+				type="checkbox">
+				<span class="dd-text">ga:CPC</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:CTR">
+			<input name="ga:CTR" id="ga:CTR" class="dd-check" value="ga:CTR"
+				type="checkbox">
+				<span class="dd-text">ga:CTR</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:costPerTransaction">
+			<input name="ga:costPerTransaction" id="ga:costPerTransaction"
+				class="dd-check" value="ga:costPerTransaction" type="checkbox">
+				<span class="dd-text">ga:costPerTransaction</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:costPerGoalConversion">
+			<input name="ga:costPerGoalConversion" id="ga:costPerGoalConversion"
+				class="dd-check" value="ga:costPerGoalConversion" type="checkbox">
+				<span class="dd-text">ga:costPerGoalConversion</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:costPerConversion">
+			<input name="ga:costPerConversion" id="ga:costPerConversion"
+				class="dd-check" value="ga:costPerConversion" type="checkbox">
+				<span class="dd-text">ga:costPerConversion</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:RPC">
+			<input name="ga:RPC" id="ga:RPC" class="dd-check" value="ga:RPC"
+				type="checkbox">
+				<span class="dd-text">ga:RPC</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:ROI">
+			<input name="ga:ROI" id="ga:ROI" class="dd-check" value="ga:ROI"
+				type="checkbox">
+				<span class="dd-text">ga:ROI</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:margin">
+			<input name="ga:margin" id="ga:margin" class="dd-check" value="ga:margin"
+				type="checkbox">
+				<span class="dd-text">ga:margin</span>
+			</input>
+		</label>
+	</div>
+	<div class="group">
+		<div class="dd-groupName">Goal Conversions</div>
+		<label class="dd-row" for="ga:goal(n)Starts">
+			<input name="ga:goal(n)Starts" id="ga:goal(n)Starts" class="dd-check"
+				value="ga:goal(n)Starts" type="checkbox">
+				<span class="dd-text">ga:goal(n)Starts</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:goalStartsAll">
+			<input name="ga:goalStartsAll" id="ga:goalStartsAll" class="dd-check"
+				value="ga:goalStartsAll" type="checkbox">
+				<span class="dd-text">ga:goalStartsAll</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:goal(n)Completions">
+			<input name="ga:goal(n)Completions" id="ga:goal(n)Completions"
+				class="dd-check" value="ga:goal(n)Completions" type="checkbox">
+				<span class="dd-text">ga:goal(n)Completions</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:goalCompletionsAll">
+			<input name="ga:goalCompletionsAll" id="ga:goalCompletionsAll"
+				class="dd-check" value="ga:goalCompletionsAll" type="checkbox">
+				<span class="dd-text">ga:goalCompletionsAll</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:goal(n)Value">
+			<input name="ga:goal(n)Value" id="ga:goal(n)Value" class="dd-check"
+				value="ga:goal(n)Value" type="checkbox">
+				<span class="dd-text">ga:goal(n)Value</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:goalValueAll">
+			<input name="ga:goalValueAll" id="ga:goalValueAll" class="dd-check"
+				value="ga:goalValueAll" type="checkbox">
+				<span class="dd-text">ga:goalValueAll</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:goalValuePerVisit">
+			<input name="ga:goalValuePerVisit" id="ga:goalValuePerVisit"
+				class="dd-check" value="ga:goalValuePerVisit" type="checkbox">
+				<span class="dd-text">ga:goalValuePerVisit</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:goal(n)ConversionRate">
+			<input name="ga:goal(n)ConversionRate" id="ga:goal(n)ConversionRate"
+				class="dd-check" value="ga:goal(n)ConversionRate" type="checkbox">
+				<span class="dd-text">ga:goal(n)ConversionRate</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:goalConversionRateAll">
+			<input name="ga:goalConversionRateAll" id="ga:goalConversionRateAll"
+				class="dd-check" value="ga:goalConversionRateAll" type="checkbox">
+				<span class="dd-text">ga:goalConversionRateAll</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:goal(n)Abandons">
+			<input name="ga:goal(n)Abandons" id="ga:goal(n)Abandons" class="dd-check"
+				value="ga:goal(n)Abandons" type="checkbox">
+				<span class="dd-text">ga:goal(n)Abandons</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:goalAbandonsAll">
+			<input name="ga:goalAbandonsAll" id="ga:goalAbandonsAll" class="dd-check"
+				value="ga:goalAbandonsAll" type="checkbox">
+				<span class="dd-text">ga:goalAbandonsAll</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:goal(n)AbandonRate">
+			<input name="ga:goal(n)AbandonRate" id="ga:goal(n)AbandonRate"
+				class="dd-check" value="ga:goal(n)AbandonRate" type="checkbox">
+				<span class="dd-text">ga:goal(n)AbandonRate</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:goalAbandonRateAll">
+			<input name="ga:goalAbandonRateAll" id="ga:goalAbandonRateAll"
+				class="dd-check" value="ga:goalAbandonRateAll" type="checkbox">
+				<span class="dd-text">ga:goalAbandonRateAll</span>
+			</input>
+		</label>
+	</div>
+	<div class="group">
+		<div class="dd-groupName">Page Tracking</div>
+		<label class="dd-row" for="ga:entrances">
+			<input name="ga:entrances" id="ga:entrances" class="dd-check"
+				value="ga:entrances" type="checkbox">
+				<span class="dd-text">ga:entrances</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:entranceRate">
+			<input name="ga:entranceRate" id="ga:entranceRate" class="dd-check"
+				value="ga:entranceRate" type="checkbox">
+				<span class="dd-text">ga:entranceRate</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:pageviews">
+			<input name="ga:pageviews" id="ga:pageviews" class="dd-check"
+				value="ga:pageviews" type="checkbox">
+				<span class="dd-text">ga:pageviews</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:pageviewsPerVisit">
+			<input name="ga:pageviewsPerVisit" id="ga:pageviewsPerVisit"
+				class="dd-check" value="ga:pageviewsPerVisit" type="checkbox">
+				<span class="dd-text">ga:pageviewsPerVisit</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:uniquePageviews">
+			<input name="ga:uniquePageviews" id="ga:uniquePageviews" class="dd-check"
+				value="ga:uniquePageviews" type="checkbox">
+				<span class="dd-text">ga:uniquePageviews</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:timeOnPage">
+			<input name="ga:timeOnPage" id="ga:timeOnPage" class="dd-check"
+				value="ga:timeOnPage" type="checkbox">
+				<span class="dd-text">ga:timeOnPage</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:avgTimeOnPage">
+			<input name="ga:avgTimeOnPage" id="ga:avgTimeOnPage" class="dd-check"
+				value="ga:avgTimeOnPage" type="checkbox">
+				<span class="dd-text">ga:avgTimeOnPage</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:exits">
+			<input name="ga:exits" id="ga:exits" class="dd-check" value="ga:exits"
+				type="checkbox">
+				<span class="dd-text">ga:exits</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:exitRate">
+			<input name="ga:exitRate" id="ga:exitRate" class="dd-check"
+				value="ga:exitRate" type="checkbox">
+				<span class="dd-text">ga:exitRate</span>
+			</input>
+		</label>
+	</div>
+	<div class="group">
+		<div class="dd-groupName">Internal Search</div>
+		<label class="dd-row" for="ga:searchResultViews">
+			<input name="ga:searchResultViews" id="ga:searchResultViews"
+				class="dd-check" value="ga:searchResultViews" type="checkbox">
+				<span class="dd-text">ga:searchResultViews</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:searchUniques">
+			<input name="ga:searchUniques" id="ga:searchUniques" class="dd-check"
+				value="ga:searchUniques" type="checkbox">
+				<span class="dd-text">ga:searchUniques</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:avgSearchResultViews">
+			<input name="ga:avgSearchResultViews" id="ga:avgSearchResultViews"
+				class="dd-check" value="ga:avgSearchResultViews" type="checkbox">
+				<span class="dd-text">ga:avgSearchResultViews</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:searchVisits">
+			<input name="ga:searchVisits" id="ga:searchVisits" class="dd-check"
+				value="ga:searchVisits" type="checkbox">
+				<span class="dd-text">ga:searchVisits</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:percentVisitsWithSearch">
+			<input name="ga:percentVisitsWithSearch" id="ga:percentVisitsWithSearch"
+				class="dd-check" value="ga:percentVisitsWithSearch" type="checkbox">
+				<span class="dd-text">ga:percentVisitsWithSearch</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:searchDepth">
+			<input name="ga:searchDepth" id="ga:searchDepth" class="dd-check"
+				value="ga:searchDepth" type="checkbox">
+				<span class="dd-text">ga:searchDepth</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:avgSearchDepth">
+			<input name="ga:avgSearchDepth" id="ga:avgSearchDepth" class="dd-check"
+				value="ga:avgSearchDepth" type="checkbox">
+				<span class="dd-text">ga:avgSearchDepth</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:searchRefinements">
+			<input name="ga:searchRefinements" id="ga:searchRefinements"
+				class="dd-check" value="ga:searchRefinements" type="checkbox">
+				<span class="dd-text">ga:searchRefinements</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:searchDuration">
+			<input name="ga:searchDuration" id="ga:searchDuration" class="dd-check"
+				value="ga:searchDuration" type="checkbox">
+				<span class="dd-text">ga:searchDuration</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:avgSearchDuration">
+			<input name="ga:avgSearchDuration" id="ga:avgSearchDuration"
+				class="dd-check" value="ga:avgSearchDuration" type="checkbox">
+				<span class="dd-text">ga:avgSearchDuration</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:searchExits">
+			<input name="ga:searchExits" id="ga:searchExits" class="dd-check"
+				value="ga:searchExits" type="checkbox">
+				<span class="dd-text">ga:searchExits</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:searchExitRate">
+			<input name="ga:searchExitRate" id="ga:searchExitRate" class="dd-check"
+				value="ga:searchExitRate" type="checkbox">
+				<span class="dd-text">ga:searchExitRate</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:searchGoal(n)ConversionRate">
+			<input name="ga:searchGoal(n)ConversionRate" id="ga:searchGoal(n)ConversionRate"
+				class="dd-check" value="ga:searchGoal(n)ConversionRate" type="checkbox">
+				<span class="dd-text">ga:searchGoal(n)ConversionRate</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:searchGoalConversionRateAll">
+			<input name="ga:searchGoalConversionRateAll" id="ga:searchGoalConversionRateAll"
+				class="dd-check" value="ga:searchGoalConversionRateAll" type="checkbox">
+				<span class="dd-text">ga:searchGoalConversionRateAll</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:goalValueAllPerSearch">
+			<input name="ga:goalValueAllPerSearch" id="ga:goalValueAllPerSearch"
+				class="dd-check" value="ga:goalValueAllPerSearch" type="checkbox">
+				<span class="dd-text">ga:goalValueAllPerSearch</span>
+			</input>
+		</label>
+	</div>
+	<div class="group">
+		<div class="dd-groupName">Site Speed</div>
+		<label class="dd-row" for="ga:pageLoadTime">
+			<input name="ga:pageLoadTime" id="ga:pageLoadTime" class="dd-check"
+				value="ga:pageLoadTime" type="checkbox">
+				<span class="dd-text">ga:pageLoadTime</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:pageLoadSample">
+			<input name="ga:pageLoadSample" id="ga:pageLoadSample" class="dd-check"
+				value="ga:pageLoadSample" type="checkbox">
+				<span class="dd-text">ga:pageLoadSample</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:avgPageLoadTime">
+			<input name="ga:avgPageLoadTime" id="ga:avgPageLoadTime" class="dd-check"
+				value="ga:avgPageLoadTime" type="checkbox">
+				<span class="dd-text">ga:avgPageLoadTime</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:domainLookupTime">
+			<input name="ga:domainLookupTime" id="ga:domainLookupTime"
+				class="dd-check" value="ga:domainLookupTime" type="checkbox">
+				<span class="dd-text">ga:domainLookupTime</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:avgDomainLookupTime">
+			<input name="ga:avgDomainLookupTime" id="ga:avgDomainLookupTime"
+				class="dd-check" value="ga:avgDomainLookupTime" type="checkbox">
+				<span class="dd-text">ga:avgDomainLookupTime</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:pageDownloadTime">
+			<input name="ga:pageDownloadTime" id="ga:pageDownloadTime"
+				class="dd-check" value="ga:pageDownloadTime" type="checkbox">
+				<span class="dd-text">ga:pageDownloadTime</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:avgPageDownloadTime">
+			<input name="ga:avgPageDownloadTime" id="ga:avgPageDownloadTime"
+				class="dd-check" value="ga:avgPageDownloadTime" type="checkbox">
+				<span class="dd-text">ga:avgPageDownloadTime</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:redirectionTime">
+			<input name="ga:redirectionTime" id="ga:redirectionTime" class="dd-check"
+				value="ga:redirectionTime" type="checkbox">
+				<span class="dd-text">ga:redirectionTime</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:avgRedirectionTime">
+			<input name="ga:avgRedirectionTime" id="ga:avgRedirectionTime"
+				class="dd-check" value="ga:avgRedirectionTime" type="checkbox">
+				<span class="dd-text">ga:avgRedirectionTime</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:serverConnectionTime">
+			<input name="ga:serverConnectionTime" id="ga:serverConnectionTime"
+				class="dd-check" value="ga:serverConnectionTime" type="checkbox">
+				<span class="dd-text">ga:serverConnectionTime</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:avgServerConnectionTime">
+			<input name="ga:avgServerConnectionTime" id="ga:avgServerConnectionTime"
+				class="dd-check" value="ga:avgServerConnectionTime" type="checkbox">
+				<span class="dd-text">ga:avgServerConnectionTime</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:serverResponseTime">
+			<input name="ga:serverResponseTime" id="ga:serverResponseTime"
+				class="dd-check" value="ga:serverResponseTime" type="checkbox">
+				<span class="dd-text">ga:serverResponseTime</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:avgServerResponseTime">
+			<input name="ga:avgServerResponseTime" id="ga:avgServerResponseTime"
+				class="dd-check" value="ga:avgServerResponseTime" type="checkbox">
+				<span class="dd-text">ga:avgServerResponseTime</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:speedMetricsSample">
+			<input name="ga:speedMetricsSample" id="ga:speedMetricsSample"
+				class="dd-check" value="ga:speedMetricsSample" type="checkbox">
+				<span class="dd-text">ga:speedMetricsSample</span>
+			</input>
+		</label>
+	</div>
+	<div class="group">
+		<div class="dd-groupName">Event Tracking</div>
+		<label class="dd-row" for="ga:totalEvents">
+			<input name="ga:totalEvents" id="ga:totalEvents" class="dd-check"
+				value="ga:totalEvents" type="checkbox">
+				<span class="dd-text">ga:totalEvents</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:uniqueEvents">
+			<input name="ga:uniqueEvents" id="ga:uniqueEvents" class="dd-check"
+				value="ga:uniqueEvents" type="checkbox">
+				<span class="dd-text">ga:uniqueEvents</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:eventValue">
+			<input name="ga:eventValue" id="ga:eventValue" class="dd-check"
+				value="ga:eventValue" type="checkbox">
+				<span class="dd-text">ga:eventValue</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:avgEventValue">
+			<input name="ga:avgEventValue" id="ga:avgEventValue" class="dd-check"
+				value="ga:avgEventValue" type="checkbox">
+				<span class="dd-text">ga:avgEventValue</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:visitsWithEvent">
+			<input name="ga:visitsWithEvent" id="ga:visitsWithEvent" class="dd-check"
+				value="ga:visitsWithEvent" type="checkbox">
+				<span class="dd-text">ga:visitsWithEvent</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:eventsPerVisitWithEvent">
+			<input name="ga:eventsPerVisitWithEvent" id="ga:eventsPerVisitWithEvent"
+				class="dd-check" value="ga:eventsPerVisitWithEvent" type="checkbox">
+				<span class="dd-text">ga:eventsPerVisitWithEvent</span>
+			</input>
+		</label>
+	</div>
+	<div class="group">
+		<div class="dd-groupName">Ecommerce</div>
+		<label class="dd-row" for="ga:transactions">
+			<input name="ga:transactions" id="ga:transactions" class="dd-check"
+				value="ga:transactions" type="checkbox">
+				<span class="dd-text">ga:transactions</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:transactionsPerVisit">
+			<input name="ga:transactionsPerVisit" id="ga:transactionsPerVisit"
+				class="dd-check" value="ga:transactionsPerVisit" type="checkbox">
+				<span class="dd-text">ga:transactionsPerVisit</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:transactionRevenue">
+			<input name="ga:transactionRevenue" id="ga:transactionRevenue"
+				class="dd-check" value="ga:transactionRevenue" type="checkbox">
+				<span class="dd-text">ga:transactionRevenue</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:revenuePerTransaction">
+			<input name="ga:revenuePerTransaction" id="ga:revenuePerTransaction"
+				class="dd-check" value="ga:revenuePerTransaction" type="checkbox">
+				<span class="dd-text">ga:revenuePerTransaction</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:transactionRevenuePerVisit">
+			<input name="ga:transactionRevenuePerVisit" id="ga:transactionRevenuePerVisit"
+				class="dd-check" value="ga:transactionRevenuePerVisit" type="checkbox">
+				<span class="dd-text">ga:transactionRevenuePerVisit</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:transactionShipping">
+			<input name="ga:transactionShipping" id="ga:transactionShipping"
+				class="dd-check" value="ga:transactionShipping" type="checkbox">
+				<span class="dd-text">ga:transactionShipping</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:transactionTax">
+			<input name="ga:transactionTax" id="ga:transactionTax" class="dd-check"
+				value="ga:transactionTax" type="checkbox">
+				<span class="dd-text">ga:transactionTax</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:totalValue">
+			<input name="ga:totalValue" id="ga:totalValue" class="dd-check"
+				value="ga:totalValue" type="checkbox">
+				<span class="dd-text">ga:totalValue</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:itemQuantity">
+			<input name="ga:itemQuantity" id="ga:itemQuantity" class="dd-check"
+				value="ga:itemQuantity" type="checkbox">
+				<span class="dd-text">ga:itemQuantity</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:uniquePurchases">
+			<input name="ga:uniquePurchases" id="ga:uniquePurchases" class="dd-check"
+				value="ga:uniquePurchases" type="checkbox">
+				<span class="dd-text">ga:uniquePurchases</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:revenuePerItem">
+			<input name="ga:revenuePerItem" id="ga:revenuePerItem" class="dd-check"
+				value="ga:revenuePerItem" type="checkbox">
+				<span class="dd-text">ga:revenuePerItem</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:itemRevenue">
+			<input name="ga:itemRevenue" id="ga:itemRevenue" class="dd-check"
+				value="ga:itemRevenue" type="checkbox">
+				<span class="dd-text">ga:itemRevenue</span>
+			</input>
+		</label>
+		<label class="dd-row" for="ga:itemsPerPurchase">
+			<input name="ga:itemsPerPurchase" id="ga:itemsPerPurchase"
+				class="dd-check" value="ga:itemsPerPurchase" type="checkbox">
+				<span class="dd-text">ga:itemsPerPurchase</span>
+			</input>
+		</label>
+	</div>
+</content>

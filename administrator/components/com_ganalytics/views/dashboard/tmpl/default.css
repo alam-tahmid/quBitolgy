@@ -1,0 +1,71 @@
+.inputbox,#tabs,.chart-table {
+	width: 100%;
+}
+
+#tabs li .ui-icon-close {
+	float: left;
+	margin: 0.4em 0.2em 0 0;
+	cursor: pointer;
+}
+
+.ui-icon {
+	cursor: pointer;
+}
+
+.gadialog label,.gadialog input {
+	display: block;
+}
+
+.gadialog label {
+	margin-top: 0.5em;
+}
+
+.gadialog input {
+	width: 95%;
+}
+
+.ui-tabs .ui-tabs-panel {
+	padding: 0;
+}
+
+.portlet {
+	margin: 0 1em 1em 0;
+}
+
+.portlet-header {
+	margin: 0.3em;
+	padding-bottom: 4px;
+	padding-left: 0.2em;
+}
+
+.portlet-header .ui-icon {
+	float: right;
+}
+
+.portlet-content {
+	padding: 0.4em;
+}
+
+.ui-sortable-placeholder {
+	border: 1px dotted black;
+	visibility: visible !important;
+	height: 50px !important;
+}
+
+.column-action {
+	position: relative;
+	left: 50%;
+}
+
+.column-action .ui-icon {
+	float: left
+}
+
+.ui-sortable-placeholder * {
+	visibility: hidden;
+}
+
+.ui-pnotify {
+	left: 50%;
+	margin-left: -150px;
+}

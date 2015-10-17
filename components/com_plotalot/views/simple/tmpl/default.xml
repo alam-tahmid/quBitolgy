@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+
+<layout title="COM_PLOTALOT_VIEW_TITLE_SIMPLE_LIST">
+	<message>
+	</message>
+</layout>
+
+<state>
+	<name>COM_PLOTALOT_VIEW_TITLE_SIMPLE_LIST</name>
+	<description></description>
+
+<config>
+<fields name="params">
+<fieldset name="basic">
+	<field name="page_hdr" type="text" size="40" default="" label="COM_PLOTALOT_VIEW_PAGE_TITLE" description="" />
+
+	<field name="@spacer" type="spacer" default="" label="" description="" />
+
+	<field name="top_text" type="textarea" rows="10" cols="60" default="" label="COM_PLOTALOT_VIEW_TEXT_ABOVE" description="COM_PLOTALOT_VIEW_TEXT_ABOVE_DESC" />
+
+	<field name="@spacer" type="spacer" default="" label="" description="" />
+
+	<field name="chart_ids" type="text" size="40" default="1" label="COM_PLOTALOT_VIEW_CHART_IDS" description="COM_PLOTALOT_VIEW_CHART_IDS_DESC" />
+
+	<field name="@spacer" type="spacer" default="" label="" description="" />
+
+	<field name="bottom_text" type="textarea" rows="10" cols="60" default="" label="COM_PLOTALOT_VIEW_TEXT_BELOW" description="COM_PLOTALOT_VIEW_TEXT_BELOW_DESC" />
+</fieldset>
+</fields>
+</config>
+
+</state>
+
+</metadata>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+<name>Plotalot</name>
+<creationDate>13 March 2015</creationDate>
+<author>Les Arbres Design</author>
+<authorUrl>http://www.lesarbresdesign.info</authorUrl>
+<copyright>Les Arbres Design 2010-2015</copyright>
+<license>GNU/GPL</license>
+<version>4.04.01f</version>
+<description>Google Visualization Charts for Joomla</description>
+
+<scriptfile>install.php</scriptfile>
+
+<files folder="site">
+		<filename>plotalot.php</filename>
+		<filename>index.html</filename>
+		<folder>assets</folder>
+		<folder>views</folder>
+</files>
+
+<languages folder="admin/language">
+	<language tag="en-GB">en-GB.com_plotalot.ini</language>
+	<language tag="de-DE">de-DE.com_plotalot.ini</language>
+	<language tag="fr-FR">fr-FR.com_plotalot.ini</language>
+	<language tag="it-IT">it-IT.com_plotalot.ini</language>
+	<language tag="ru-RU">ru-RU.com_plotalot.ini</language>
+	<language tag="nl-NL">nl-NL.com_plotalot.ini</language>
+</languages>
+
+<administration>
+	<menu img="../administrator/components/com_plotalot/assets/plotalot-16.png">COM_PLOTALOT</menu>
+
+	<files folder="admin">
+		<filename>plotalot.php</filename>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>config.xml</filename>
+		<folder>models</folder>
+		<folder>helpers</folder>
+		<folder>assets</folder>
+		<folder>views</folder>
+	</files>
+
+	<languages folder="admin/language">
+		<language tag="en-GB">en-GB.com_plotalot.ini</language>
+		<language tag="en-GB">en-GB.com_plotalot.sys.ini</language>
+		<language tag="de-DE">de-DE.com_plotalot.ini</language>
+		<language tag="de-DE">de-DE.com_plotalot.sys.ini</language>
+		<language tag="fr-FR">fr-FR.com_plotalot.ini</language>
+		<language tag="fr-FR">fr-FR.com_plotalot.sys.ini</language>
+		<language tag="it-IT">it-IT.com_plotalot.ini</language>
+		<language tag="it-IT">it-IT.com_plotalot.sys.ini</language>
+		<language tag="ru-RU">ru-RU.com_plotalot.ini</language>
+		<language tag="ru-RU">ru-RU.com_plotalot.sys.ini</language>
+		<language tag="nl-NL">nl-NL.com_plotalot.ini</language>
+		<language tag="nl-NL">nl-NL.com_plotalot.sys.ini</language>
+	</languages>
+
+</administration>
+
+</extension>
